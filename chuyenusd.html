@@ -55,7 +55,7 @@
     </form>
   </body>
   <script>
-    const rates = {
+    const sss = {
       USD: 1,
       EURO: 0.8,
       VND: 23000,
@@ -66,10 +66,10 @@
     const resultDOM = document.getElementById("result");
     // body//
     function toUSD(amount, currency) {
-      return amount / rates[currency];
+      return amount / sss[currency];
     }
     function fromUSD(amount, currency) {
-      return amount * rates[currency];
+      return amount * sss[currency];
     }
     function show() {
       const amount = amountDOM.value;
